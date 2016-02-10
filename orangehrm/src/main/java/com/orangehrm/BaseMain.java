@@ -26,6 +26,7 @@ public class BaseMain {
 		prop.load(fs);
 		//String URL = prop.getProperty("url");
 		//String browser = prop.getProperty("browser");
+		System.out.println("testing");
 		switch (prop.getProperty("browser"))
 		{
 
