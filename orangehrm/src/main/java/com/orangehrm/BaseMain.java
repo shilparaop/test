@@ -27,23 +27,23 @@ public class BaseMain {
 		//String URL = prop.getProperty("url");
 		//String browser = prop.getProperty("browser");
 		System.out.println("testing");
-		switch (prop.getProperty("browser"))
-		{
-
-		case "ie":
-			
-			System.setProperty("webdriver.ie.driver", "C:/Users/shilpa/Desktop/IEDriverServer.exe");
-			driver=new InternetExplorerDriver();
-			break;
-		case "chrome":
-			System.setProperty("webdriver.chrome.driver", "C:/Users/shilpa/Desktop/chromedriver.exe");
-			driver=new ChromeDriver();
-			break;
-
-		default:
-			driver=new FirefoxDriver();
-			break;
-		} 
+//		switch (prop.getProperty("browser"))
+//		{
+//
+//		case "ie":
+//			
+//			System.setProperty("webdriver.ie.driver", "C:/Users/shilpa/Desktop/IEDriverServer.exe");
+//			driver=new InternetExplorerDriver();
+//			break;
+//		case "chrome":
+//			System.setProperty("webdriver.chrome.driver", "C:/Users/shilpa/Desktop/chromedriver.exe");
+//			driver=new ChromeDriver();
+//			break;
+//
+//		default:
+//			driver=new FirefoxDriver();
+//			break;
+//		} 
 		
 		
 		driver.get(prop.getProperty("url"));
